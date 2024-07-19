@@ -264,14 +264,13 @@ hr {
         gap: 15px;
         margin: auto 6%;
     }
+}
+@media (max-width: 500px) {
     .post {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
     }
-}
-@media (max-width: 500px) {
-
 }
 @media (max-width: 425px) {
     .main-post {
