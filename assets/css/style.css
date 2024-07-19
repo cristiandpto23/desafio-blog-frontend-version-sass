@@ -137,15 +137,17 @@ hr {
 
 /* MAIN */
 .main {
-    margin: 56px 110px;
+    margin: 56px 6% 0;
     display: flex;
+    gap: 10%;
 }
 
 /* MAIN | Populares */
 .populares__container {
     display: flex;
-    max-width: 600px;
+    max-width: 60%;
     gap: 30px;
+    margin-bottom: 50px;
 }
 .post--populares {
     flex-direction: column;
@@ -168,12 +170,12 @@ hr {
 /* MAIN | Categorías */
 .categorias {
     max-width: 400px;
-    margin: 0 140px;
+   /*  margin: 0 10%; */
 }
 .catergorias__container {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 32px;
 }
 .card {
     display: flex;
