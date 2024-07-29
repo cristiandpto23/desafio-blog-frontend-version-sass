@@ -12,10 +12,12 @@
 <body>
     <!-- Navbar -->
     <nav class="nav">
-        <div class="logo--lg">
-            <img class="logo__img--lg" src="./assets/img/logos/adl.png" alt="Logo Desafío Latam">
-            <h1 class="logo__title--lg">Blog FrontEnd</h1>
-        </div>
+        <a class="logo__a--lg" href="#">
+            <div class="logo--lg">
+                <img class="logo__img--lg" src="./assets/img/logos/adl.png" alt="Logo Desafío Latam">
+                <h1 class="logo__title--lg">Blog FrontEnd</h1>
+            </div>
+        </a>
         <div class="nav_register">
             <a href="./register.html"><button class="btn">Regístrate</button></a>
         </div>
@@ -26,15 +28,17 @@
             <h2 class="title">Novedades</h2>
             <section class="header__container">
                 <!-- Main Post -->
-                <div class="main-post">
-                    <img class="main-post__img"src="./assets/img/posts/bootstrap.png" alt="">
-                    <p class="main-post__date">24 noviembre, 2022</p>
-                    <p class="main-post__title">Modifica el tema de Bootstrap con variable CSS</p>
-                    <div class="logo logo--main-post">
-                        <img class="logo__img logo__img--main-post" src="./assets/img/logos/adl.png" alt="">
-                        <p class="logo__title logo__title--main-post">Desafío Latam</p>
+                <a class="main-post__a" href="./post.html">
+                    <div class="main-post">
+                        <img class="main-post__img"src="./assets/img/posts/bootstrap.png" alt="">
+                        <p class="main-post__date">24 noviembre, 2022</p>
+                        <p class="main-post__title">Modifica el tema de Bootstrap con variable CSS</p>
+                        <div class="logo logo--main-post">
+                            <img class="logo__img logo__img--main-post" src="./assets/img/logos/adl.png" alt="">
+                            <p class="logo__title logo__title--main-post">Desafío Latam</p>
+                        </div>
                     </div>
-                </div>
+                </a>
                 <!-- Aside posts -->
                 <aside class="aside">
                     <div class="post">
@@ -168,6 +172,19 @@
                 <h5 class="categorias__text">Ver todas las categorías ></h5>
             </section>
         </main>
+
+
+        <aside>
+            <section class="subscription">
+                <h2 class="subscription__title">Mantente actualizado sobre el Desarrollo Front End</h2>
+                <div class="none"></div>
+                <label for="name" class="form__label">
+                <input type="text" id="name" class="form__input subscription__input" placeholder="Nombre"></label>
+                <button class="form__btn--crea btn subscription__button">Suscríbete</button>
+                
+    
+            </section>
+        </aside>
 
         <hr>
 
