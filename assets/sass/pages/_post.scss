@@ -1,0 +1,36 @@
+.bootstrap-post {
+    background-color: #EEEEEE;
+    padding: 3rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.main-post--bootstrap-post {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1.6rem;
+}
+
+.bootstrap-post__text {
+    margin: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    color: #333333;
+    
+}
+
+/* Post relacionados */
+.relacionados {
+    margin: 56px 6% 0;
+    display: flex;
+    flex-direction: column;
+}
+.relacionados__container {
+    display: flex;
+    justify-content: space-between;
+    
+}

@@ -1,0 +1,165 @@
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    color: #171717;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+hr {
+    border: 1px solid #CCCCCC;
+    
+}
+/* Estilos generales | Título secciones  */
+.title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 27px;
+}
+
+
+/* Navbar */
+.nav, .footer {
+    height: 130px;
+    display: flex;
+    align-items: center;
+    margin: auto 6%;
+}
+.nav_register {
+    margin-left: auto;
+}
+
+
+/* Header | Main Post Logo Academia */
+.logo__img--main-post {
+    width: 60px;
+    height: 60px;
+}
+.logo__title--main-post {
+    display: inline;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+/*  Header | Aside | posts */
+.aside {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* MAIN */
+.main {
+    margin: 56px 6% 0;
+    display: flex;
+    gap: 10%;
+}
+
+/* MAIN | Populares */
+.populares__container {
+    display: flex;
+    max-width: 60%;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.post--populares {
+    flex-direction: column;
+    gap: 5px;
+    height: 390px;
+}
+.post__img--populares {
+    width: 298px;
+    height: 200px;
+}
+.post-date-populares {
+    font-size: 16px;
+}
+.post__title--populares {
+    margin-bottom: 35px;
+    font-size: 20px;
+}
+
+
+/* MAIN | Categorías */
+.categorias {
+    max-width: 400px;
+   /*  margin: 0 10%; */
+}
+.catergorias__container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+
+.categorias__text {
+    margin: 50px auto;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* Categorígas | cards */ 
+@include card-color('html', $color-html);
+@include card-color('js', $color-js);
+@include card-color('css', $color-css);
+@include card-color('react', $color-react);
+@include card-color('vue', $color-vue);
+@include card-color('bootstrap', $color-bootstrap);
+
+@media (max-width: 1280px) {
+    
+}
+@media (max-width: 1024px){
+    .header__container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .title {
+        padding-left: 16%;
+    }
+    .main-post {
+        width: 80%;
+    }
+    .main-post__img {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .populares__container {
+        flex-direction: column;
+    }
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        margin: auto 6%;
+    }
+}
+@media (max-width: 500px) {
+    .post {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width: 425px) {
+    .main-post {
+        width: 100%;
+    }
+    .main-post__img {
+        width: 100%;
+    }
+}

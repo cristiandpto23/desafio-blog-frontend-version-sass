@@ -1,0 +1,5 @@
+@mixin card-color($name, $color) {
+    .card--#{$name} {
+        background-color: $color;
+    }
+}
